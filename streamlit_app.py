@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 import streamlit as st
 from IPython import get_ipython
 
-train = pd.read_csv('E:\Workstation\Loan-Approval-Prediction-Random-Forest-Web-App-main/train.csv')
+train = pd.read_csv('train.csv')
 
 data = train.dropna()
 
