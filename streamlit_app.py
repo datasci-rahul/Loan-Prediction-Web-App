@@ -59,7 +59,7 @@ def prediction(Gender, Married, TotalApplicantIncome, LoanAmount, Credit_History
     LoanAmount = LoanAmount / 1000
  
     # Making predictions 
-    pred_inputs = model.predict(pd.DataFrame([[Gender, Married, TotalApplicantIncome, LoanAmount, Credit_History]]))
+    pred_inputs = model.prediction(pd.DataFrame([[Gender, Married, TotalApplicantIncome, LoanAmount, Credit_History]]))
         
     if pred_inputs[0] == 0:
         pred = 'I am sorry, you have been rejected for the loan.'
