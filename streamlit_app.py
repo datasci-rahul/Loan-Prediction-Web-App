@@ -1,9 +1,9 @@
 import pandas as pd
 #import sklearn as sk
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier 
+#from sklearn.model_selection import train_test_split
+#from sklearn.ensemble import RandomForestClassifier 
 import streamlit as st
-from IPython import get_ipython
+#from IPython import get_ipython
 
 train = pd.read_csv('train.csv')
 
