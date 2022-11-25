@@ -32,8 +32,8 @@ X.shape, y.shape
 #x_train, x_test, y_train, y_test = train_test_split(X,y, test_size = 0.2, random_state = 10, shuffle = True)
 
 #build random forest model, limit max depth to avoid overfitting
-forest = RandomForestClassifier(max_depth=4, random_state = 10, n_estimators = 100, min_samples_leaf=5) 
-model = forest.fit(x_train, y_train)
+#forest = RandomForestClassifier(max_depth=4, random_state = 10, n_estimators = 100, min_samples_leaf=5) 
+#model = forest.fit(x_train, y_train)
 
 
 @st.cache()
