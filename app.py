@@ -4,11 +4,11 @@ import pickle
 import numpy as np
 
 app = Flask(__name__)
-model = pickle.load(open('E:/loan_prediction-main/model.pkl', 'rb'))
+model = pickle.load(open('https://github.com/datasci-rahul/Loan-Prediction-Web-App/blob/main/model.pkl', 'rb'))
 app = Flask(__name__, template_folder='template')  # still relative to module
 @app.route('/')
 def home():
-    return render_template("index.html")
+    return render_template("https://github.com/datasci-rahul/Loan-Prediction-Web-App/blob/main/index.html")
 
 
 @app.route('/predict', methods=['GET', 'POST'])
@@ -96,13 +96,13 @@ def predict():
             prediction="Yes"
 
 
-        return render_template("prediction.html", prediction_text="loan status is {}".format(prediction))
+        return render_template("https://github.com/datasci-rahul/Loan-Prediction-Web-App/blob/main/prediction.html", prediction_text="loan status is {}".format(prediction))
 
 
 
 
     else:
-        return render_template("prediction.html")
+        return render_template("https://github.com/datasci-rahul/Loan-Prediction-Web-App/blob/main/prediction.html")
 
 
 
